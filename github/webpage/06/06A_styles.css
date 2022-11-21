@@ -1,6 +1,10 @@
-/* ====== This is my CSS Page for Lesson 06 ======
--------------- Angel Rittenburg -------------- */
+/*
+====== This is my CSS Page for Lesson 06 ====== 
+--------------  Angel Rittenburg --------------
+*/
+
 /* CSS Styles section of index_lesson_06.html */
+
 /* ALL Pages */
 a:hover {
     background-color: blue;
@@ -8,7 +12,7 @@ a:hover {
 }
 a:visited {
     background-color: rgb(7, 239, 239);
-    color: #FFFFFF: 
+    color: #ffffff:
 }
 /* 1 */
 #xssTwo {
@@ -67,6 +71,7 @@ span.earth {
     background-color: black;
     font-family: times;
 }
+
 span.wind {
     font-family: cursive;
     font-variant: bold;
@@ -76,6 +81,7 @@ span.wind {
     background-color: lightblue;
     font-family: arial;
 }
+
 span.fire {
     font-family: 'Arial Black', 'Impact', sans-serif;
     font-size: 210%;
@@ -84,8 +90,152 @@ span.fire {
     background-color: yellow;
     font-family: 
 }
-/* {
+
+/* CSS for the Moving Elements Page */
+/* This page has two boxes to show the experiments */
+/* this grey one */
+
+#movBox1 {
+    border: black 2pt dashed;
+    margin: 21px 10%;
+    padding: 1pt 6pt 12pt 6pt;
+    border-radius: 21px;
+    box-shadow: #888888 9px;
+    min-height: 200px;
+}
+
+/* and this transparent one */
+
+#movBox2 {
+    background-color: lightgrey;
+    border: black 2pt dashed;
+    margin: 21px 10%;
+    padding: 1pt 6pt 12pt 6pt;
+    border-radius: 21px;
+    box-shadow: #888888 9px;
+    min-height: 200px;
+}
+
+/* these are the properties for the Content section */
+#noSize {
+    background-color: white;
+}
+
+#gotSize {
+    background-color: white;
+    width: 140px;
+    height: 140px;
+}
+
+#border3Step {
+    border-color: green;
+    border-style: dotted;
+    border-width: 6px;
+}
+
+#border1Step {
+    border: double red 6px;
+}
+
+#noPad {
+    border: double green 6pt;
+    width: 300px;
+    height: 80px;
+    background-color: white;
+}
+
+#gotPad {
+    padding: 18px;
+    border-left: blue 6px dotted;
+    border-right: purple 6pt dotted;
+    border-top: orange 6pt dotted;
+    border-bottom: green 6pt dotted;
+    background-color: white;
+    width: 300px;
+    height: 80px;
+}
+
+#noMargin {
+    float: left;
+  }
+  
+  #gotMargin {
+    margin: 20px;
+    float: right;
+  }
+  
+  .whiteBox {
+    border: solid black 1px;
+    padding: 8px;
+    background-color: white;
+    width: 80px;
+    height: 36px;
+  }
+  
+  .body4 {
+    background-color: grey;
+  }
+  
+  
+
+
+
+#img2 {
+    float: right;
+}
+
+#movBox, hr {
+    border-top: purple 1px solid;
+    margin: 28px;
+}
+
+.clearTxtBlue {
+float: right;
+width: 100px;
+height: 50px;
+background-color:blue;
+color: white;
+border: 3px solid blue;
+}
+
+.clearTxtRed {
+color: white;
+background-color:red;    
+border: 1px solid red;
+clear: right;
+}
+
+/* This is all for the clearFix tag */
+
+.div3 {
+border: 3px solid blue;
+color: white;
+background-color: black;
+padding: 0px 12px;
+}
+
+.clearFix {
+overflow: auto;
+}
+
+.clearFixPix {
+float: right;
+width: 210px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+
+{
     font-family: 'Markazi Text';
     font-weight: 400;
-}
+  }
 */

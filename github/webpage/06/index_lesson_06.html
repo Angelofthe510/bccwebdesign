@@ -11,96 +11,109 @@
     <div>
         <h2>Angel Rittenburg | <a href="https://angelofthe510.github.io/bccwebdesign/">Lessons</a></h2>
         <h1>Lesson 6:</h1>
-        <h2><a href="#css">CSS Styles</a> | <a href="#mov">Moving Elements</a><br>
-        <a href="06A_styles.css" target="_blank">CSS Comments</a> | <a href="https://lh3.googleusercontent.com/ZRLghzeS-rCq4xy93rGRLKV1BYlldNoDrYSLegSBY68rpHO7R5KfHebvYCQK6eRThxENXlWT44mRiuCruWlECNImvHNibtWGNZWyU8jYbukMouLBkeDoNBowVjzIiQ-qBPNBWbf7Ag=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/ZRLghzeS-rCq4xy93rGRLKV1BYlldNoDrYSLegSBY68rpHO7R5KfHebvYCQK6eRThxENXlWT44mRiuCruWlECNImvHNibtWGNZWyU8jYbukMouLBkeDoNBowVjzIiQ-qBPNBWbf7Ag=w600-h315-p-k" target="_blank">HTML Comments</a></h2>
-    </div>
-    <a id="css"></a><hr>
-    <h1>CSS | <a href="#SP">Span Tag</a> | <a href="#IVBE">Inline vs. Block</a></h1>
-    <h2>#1</h2>
-    <div style="border-radius: 21px; background-color: green; padding: 6pt; margin-left: 10%; margin-right: 10%; color: black; ">
-        <h2 style="color: black;">Code within the Tag</h2>
-        <p>so the code looks like this:</p>
-        <p style="color: yellow;">&#60;div style&#61;&#34;background-color&#58; #123456&#59 margin&#58 12pt&#62;</p>
-        <p>and it gets really hard to keep track of all that code especially in today's Wed Development World.</p>
-        <!-- This is fun for me. Making comments in either an HTML or CSS file is a great way to keep track of whatever is going on with the formatting or construction of the site. -->
-    </div>
-    <h2>#2</h2>
-    <div id="xssTwo">
-        <h2>Div Tag + External Style Sheet</h2>
-        <p>all the elements within the grey box are defined in an <span id="xssBold">External Style Sheet</span> and are much easier to manage in one document as apposed to a <span id="xssBold">Div Tag + HTML Code</span><br>
-        i personally prefer this method as it significantly improves work flow</p>
-        <p>the code looks like this:</p>
-        <p id="xssBold">&#60;div id&#61;&#34;exStyle&#34;&#62;<br>
-        &#60;p&#62;Your content would then go into this area here.&#60;/p&#62;<br>&#60;/div&#62;
-        <!-- using the HTML code to display the characters used in code is the only way to make the page work correctly. 
-        For some strange reason, the browsers read those characters outside of the <> brackets as code so you sorta need to make them the HTML characters. Heres a link for more: https://www.rapidtables.com/web/html/html-codes.html -->
-    </div>
-    <h2>#3</h2>
-    <div class="xssThree">
-    <h2>Consecutive Div Tags + External Style Sheet</h2>
-    <p>This method can be utilized many times within a site</p>
-    <p>The CSS Code does look a bit different, so you may want to check out the CSS document for this specific style.</p>
-    </div>  
-    <div class="xssThree">
-    <h2>Star Trek Ipsum</h2>
-    <p>Humans do have an amazing capacity for believing what they choose -- and excluding that which is painful. Look at these three words written larger than all the rest, and with special pride never written before or since -- tall words, proudly saying "We the people" ... these words and the words that follow ... must apply to everyone or they mean nothing.</p>
-    <p>Make It So! Do you know the old Klingon proverb that revenge is a dish best served cold? It is very cold — in space. No, Kirk, no. You’ll not escape. From hell’s heart, I stab at thee. …For spite’s sake, I spit my last breath at thee.</p>
-    </div>  
-    <div class="xssThree">
-    <h2>Leonard's excuse for the look and feel of this site</h2>
-    <p> "Damn it Jim! I'm a doctor not a web designer!"</p>
-    </div>
-    <h2>#4</h2>
-    <div id="xssFour">
-    <h2 class="xssFourA">Modifying HTML Tags</h2>
-    <p>so this &#60;p&#62; tag has no modification at all, its just plain oldgeneric HTML text</p>
-    <!-- making these tables was fun too!! its a challenge to get the colors to work right -->
-</div>
-<a id="SP"></a><hr/>
-<h2><a href="#css">CSS</a> | Span Tag | <a href="#IVBE">Inline vs Block Elements</a> | <a href="#mov">Moving Elements</a></h2>
-<hr/>
-<h3>#1</h3>
-<div id="spanTag">
-    <p>adds one or more style elements inline with the single HTML Tag its encoded to</p>
-    <p style="color: orange">&#60;p&#62;Text goes here,  &#60;span style&#61;&#34;color:purple&#34;&#62;purple text&#60;/span&#62;bewtween tags.</p>
-    <p>... and look like this in browser ...</p>
-    <p>Text goes here, <span style="color: purple">purple text</span> between tags.</p>
-</div>
-<h3>#2</h3>
-<div id="spanTag">
-    <p>this is a Span Class Tag ... the HTML doc refrences the CSS doc ... here's what the code would look like</p>
-    <p style="color: orange">&#60;p&#62;Text goes here,  &#60;span class&#61;&#34;className&#34;&#62;purple text&#60;/span&#62;bewtween tags.</p>
-    <p> Text goes here, <span class="spanTagA">purple text</span> between tags.</p>
-</div>
-<a id="IVBE"></a><hr>
-<h2>Inline vs Block Element</h2>
-<h4><a href="#css">CSS</a> | Span Tag | <a href="#IVBE">Inline vs Block Elements</a> | <a href="#mov">Moving Elements</a></h4>
-<hr>
-<h3>#1</h3>
-<div id="inLine">
-    <h3>Consecutive Inline Elements</h3>
-    <p>these things are wierd but are a quick way to format individual elements</p>
-    <b>this <a href ="https://tinyurl.com/3d3b6e8w">link right here</a> is </b><span style="background-color:lightgreen">&#32;the <i>latest news</i> about&#32;</span><img src="https://www.seekpng.com/png/detail/3-31025_twitter-logo-transparent-background-png-transparent-twitter-logo.png" alt="Country" height="42" width="42"> <i style="color:red; background-color: yellow;">the Chief Twitt</i> and wtf is going on there
-</div>
-<h3>#2</h3>
-<div style="border: #e40404 6pt solid; margin: 21px 10%; padding: 1pt 6pt 12pt 6pt; border-radius: 21px">
-    <h3>Consecutive Block Elements</h3>
-    <p>these have a line break after each tag ... looks like a double spaced essay</p>
-    <h6>H6 - Episode 7</h6>
-    <h2>H2 - WAKIE WAKIE CUPCAKE</h2>
-    <p>P - Deflector power at maximum. Energy discharge in six seconds. Warp reactor core primary coolant failure.</p>
-<div class="frosting">
-    <h5>H5 - Destruction is imminent. Resistance is futile.</h5>
-<!-- This particular block was a challenge to make. Its all about the hyarchy of the div tags...the request was for a div tag inside a div tag -->
-</div>
-</div>
-<h3>#3</h3>
-<div id="inLine">
-    <h3>Inline Element nested within a Block Element + CSS Style Sheet</h3>
-<p>X</p><span class="earth">Earth </span> <span class="wind">Wind </span>& <span class="fire">Fire</span>
-
-</div>
-<p>here</p>
-<a id="mov"></a><hr>
-</a>
-</body>
+        <h2><a href="#css">CSS Styles</a> | <a href="06_mov_el.html">Moving Elements</a><br>
+        <a href="06A_styles.css" target="_blank">CSS Comments</a> | <a href="https://lh3.googleusercontent.com/ZRLghzeS-rCq4xy93rGRLKV1BYlldNoDrYSLegSBY68rpHO7R5KfHebvYCQK6eRThxENXlWT44mRiuCruWlECNImvHNibtWGNZWyU8jYbukMouLBkeDoNBowVjzIiQ-qBPNBWbf7Ag=w2400?source=screenshot.guru">HTML Comments</a></h2><html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="06A_styles.css">
+                <title>Angel Lesson 6A</title>
+            </head>
+            <body>
+                <div>
+                    <h2>Angel Rittenburg | <a href="../index.html">Lessons</a></h2>
+                    <h1>Lesson 6:</h1>
+                    <h2><a href="#css">CSS Styles</a> | <a href="#mov">Moving Elements</a><br>
+                    <a href="06A_styles.css" target="_blank">CSS Comments</a> | <a href="https://lh3.googleusercontent.com/ZRLghzeS-rCq4xy93rGRLKV1BYlldNoDrYSLegSBY68rpHO7R5KfHebvYCQK6eRThxENXlWT44mRiuCruWlECNImvHNibtWGNZWyU8jYbukMouLBkeDoNBowVjzIiQ-qBPNBWbf7Ag=w2400?source=screenshot.guru" target="_blank" style="width: 100%">HTML Comments</a></h2>
+                </div>
+                <a id="css"></a><hr>
+                <h1>CSS | <a href="#SP">Span Tag</a> | <a href="#IVBE">Inline vs. Block</a></h1>
+                <h2>#1</h2>
+                <div style="border-radius: 21px; background-color: green; padding: 6pt; margin-left: 10%; margin-right: 10%; color: black; ">
+                    <h2 style="color: black;">Code within the Tag</h2>
+                    <p>so the code looks like this:</p>
+                    <p style="color: yellow;">&#60;div style&#61;&#34;background-color&#58; #123456&#59 margin&#58 12pt&#62;</p>
+                    <p>and it gets really hard to keep track of all that code especially in today's Wed Development World.</p>
+                    <!-- This is fun for me. Making comments in either an HTML or CSS file is a great way to keep track of whatever is going on with the formatting or construction of the site. -->
+                </div>
+                <h2>#2</h2>
+                <div id="xssTwo">
+                    <h2>Div Tag + External Style Sheet</h2>
+                    <p>all the elements within the grey box are defined in an <span id="xssBold">External Style Sheet</span> and are much easier to manage in one document as apposed to a <span id="xssBold">Div Tag + HTML Code</span><br>
+                    i personally prefer this method as it significantly improves work flow</p>
+                    <p>the code looks like this:</p>
+                    <p id="xssBold">&#60;div id&#61;&#34;exStyle&#34;&#62;<br>
+                    &#60;p&#62;Your content would then go into this area here.&#60;/p&#62;<br>&#60;/div&#62;
+                    <!-- using the HTML code to display the characters used in code is the only way to make the page work correctly. 
+                    For some strange reason, the browsers read those characters outside of the <> brackets as code so you sorta need to make them the HTML characters. Heres a link for more: https://www.rapidtables.com/web/html/html-codes.html -->
+                </div>
+                <h2>#3</h2>
+                <div class="xssThree">
+                <h2>Consecutive Div Tags + External Style Sheet</h2>
+                <p>This method can be utilized many times within a site</p>
+                <p>The CSS Code does look a bit different, so you may want to check out the CSS document for this specific style.</p>
+                </div>  
+                <div class="xssThree">
+                <h2>Star Trek Ipsum</h2>
+                <p>Humans do have an amazing capacity for believing what they choose -- and excluding that which is painful. Look at these three words written larger than all the rest, and with special pride never written before or since -- tall words, proudly saying "We the people" ... these words and the words that follow ... must apply to everyone or they mean nothing.</p>
+                <p>Make It So! Do you know the old Klingon proverb that revenge is a dish best served cold? It is very cold — in space. No, Kirk, no. You’ll not escape. From hell’s heart, I stab at thee. …For spite’s sake, I spit my last breath at thee.</p>
+                </div>  
+                <div class="xssThree">
+                <h2>Leonard's excuse for the look and feel of this site</h2>
+                <p> "Damn it Jim! I'm a doctor not a web designer!"</p>
+                </div>
+                <h2>#4</h2>
+                <div id="xssFour">
+                <h2 class="xssFourA">Modifying HTML Tags</h2>
+                <p>so this &#60;p&#62; tag has no modification at all, its just plain oldgeneric HTML text</p>
+                <!-- making these tables was fun too!! its a challenge to get the colors to work right -->
+            </div>
+            <a id="SP"></a><hr/>
+            <h2><a href="#css">CSS</a> | Span Tag | <a href="#IVBE">Inline vs Block Elements</a> | <a href="#mov">Moving Elements</a></h2>
+            <hr/>
+            <h3>#1</h3>
+            <div id="spanTag">
+                <p>adds one or more style elements inline with the single HTML Tag its encoded to</p>
+                <p style="color: orange">&#60;p&#62;Text goes here,  &#60;span style&#61;&#34;color:purple&#34;&#62;purple text&#60;/span&#62;bewtween tags.</p>
+                <p>... and look like this in browser ...</p>
+                <p>Text goes here, <span style="color: purple">purple text</span> between tags.</p>
+            </div>
+            <h3>#2</h3>
+            <div id="spanTag">
+                <p>this is a Span Class Tag ... the HTML doc refrences the CSS doc ... here's what the code would look like</p>
+                <p style="color: orange">&#60;p&#62;Text goes here,  &#60;span class&#61;&#34;className&#34;&#62;purple text&#60;/span&#62;bewtween tags.</p>
+                <p> Text goes here, <span class="spanTagA">purple text</span> between tags.</p>
+            </div>
+            <a id="IVBE"></a><hr>
+            <h2>Inline vs Block Element</h2>
+            <h4><a href="#css">CSS</a> | Span Tag | <a href="#IVBE">Inline vs Block Elements</a> | <a href="#mov">Moving Elements</a></h4>
+            <hr>
+            <h3>#1</h3>
+            <div id="inLine">
+                <h3>Consecutive Inline Elements</h3>
+                <p>these things are wierd but are a quick way to format individual elements</p>
+                <b>this <a href ="https://tinyurl.com/3d3b6e8w">link right here</a> is </b><span style="background-color:lightgreen">&#32;the <i>latest news</i> about&#32;</span><img src="https://www.seekpng.com/png/detail/3-31025_twitter-logo-transparent-background-png-transparent-twitter-logo.png" alt="Country" height="42" width="42"> <i style="color:red; background-color: yellow;">the Chief Twitt</i> and wtf is going on there
+            </div>
+            <h3>#2</h3>
+            <div style="border: #e40404 6pt solid; margin: 21px 10%; padding: 1pt 6pt 12pt 6pt; border-radius: 21px">
+                <h3>Consecutive Block Elements</h3>
+                <p>these have a line break after each tag ... looks like a double spaced essay</p>
+                <h6>H6 - Episode 7</h6>
+                <h2>H2 - WAKIE WAKIE CUPCAKE</h2>
+                <p>P - Deflector power at maximum. Energy discharge in six seconds. Warp reactor core primary coolant failure.</p>
+            <div class="frosting">
+                <h5>H5 - Destruction is imminent. Resistance is futile.</h5>
+            <!-- This particular block was a challenge to make. Its all about the hyarchy of the div tags...the request was for a div tag inside a div tag -->
+            </div>
+            </div>
+            <h3>#3</h3>
+            <div id="inLine">
+                <h3>Inline Element nested within a Block Element + CSS Style Sheet</h3>
+            <p>X</p><span class="earth">Earth </span> <span class="wind">Wind </span>& <span class="fire">Fire</span>
+            
+            </div>
+            <p>here</p>
+            <a id="mov"></a><hr>
+            </a>
+            </body>
