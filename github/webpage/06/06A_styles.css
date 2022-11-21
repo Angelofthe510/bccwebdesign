@@ -1,12 +1,91 @@
-/* ====== I'm breaking my CSS into three sections, but containing it within this one CSS file. ====== 
-Main section = Home page | 01 section = Navigation | 02 section = Secondary pages | 03 section = for Footer
-====== */
-/* Main Section - 00-nameHere */
-
-/* Navigation - 01-nameHere */
-
-/* Secondary Pages - 02-nameHere */
-
-/* Footer - 03-nameHere */
-
-/* == End == */
+/* ====== This is my CSS Page for Lesson 06 ======
+-------------- Angel Rittenburg -------------- */
+/* CSS Styles section of index_lesson_06.html */
+/* ALL Pages */
+a:hover {
+    background-color: blue;
+    color: #FFFFFF;
+}
+a:visited {
+    background-color: rgb(7, 239, 239);
+    color: #FFFFFF: 
+}
+/* 1 */
+#xssTwo {
+    color: black;
+    background-color: grey;
+    margin: 21px 10%;
+    padding: 1pt 14pt;
+    border-radius: 21px;
+}
+/* 2 + 3 + 4 */
+#xssBold {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+/* 3 */
+div.xssThree {
+    background-color: plum;
+    color: #FFFFFF;
+    margin: 21px 10%;
+    padding: 1pt 14pt;
+    border-radius: 21px;
+}
+/* 4 */
+#xssFour {
+    border: #a1a1a1 1pt solid;
+    margin: 21px 10%;
+    padding: 1pt 6pt 12pt 6pt;
+    border-radius: 21px;
+}
+/* Span Tags */
+#spanTag {
+    border: orange 6pt solid;
+    background-color: rgb(255, 255, 200 );
+    margin: 21px 10%;
+    padding: 1pt 6pt 12pt 6pt;
+    border-radius: 21px;
+}
+span.spanTagA {
+    color: purple;
+    font-weight: bold;
+}
+/* Inline vs Block Element */
+#inLine {
+    border: #888888 6pt solid;
+    margin: 21px 10%;
+    padding: 1pt 6pt 12pt 6pt;
+    border-radius: 21px;
+}
+/* Inline Element nested w/in a Block Element = CSS Style Sheet */
+span.earth {
+    font-family: "Seymour One";
+    font-weight: 600 ;
+    font-size: 200%;
+    color: orange;
+    padding: 0pt 6pt;
+    background-color: black;
+    font-family: times;
+}
+span.wind {
+    font-family: cursive;
+    font-variant: bold;
+    font-size: 280%;
+    color: blue;
+    padding: 0pt 6pt;
+    background-color: lightblue;
+    font-family: arial;
+}
+span.fire {
+    font-family: 'Arial Black', 'Impact', sans-serif;
+    font-size: 210%;
+    color: red;
+    padding: 0pt 6pt;
+    background-color: yellow;
+    font-family: 
+}
+/* {
+    font-family: 'Markazi Text';
+    font-weight: 400;
+}
+*/
