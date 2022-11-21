@@ -14,6 +14,13 @@ a:visited {
     background-color: rgb(7, 239, 239);
     color: #ffffff:
 }
+.center {
+    text-align: center;
+}
+.hiLite {
+    color: orangered;
+    font
+}
 /* 1 */
 #xssTwo {
     color: black;
@@ -134,7 +141,7 @@ span.fire {
 }
 
 #border1Step {
-    border: double red 6px;
+    border: double red 6px
 }
 
 #noPad {
@@ -172,14 +179,10 @@ span.fire {
     height: 36px;
   }
   
-  .body4 {
+  #body4 {
     background-color: grey;
   }
   
-  
-
-
-
 #img2 {
     float: right;
 }
@@ -223,19 +226,59 @@ float: right;
 width: 210px;
 }
 
+/* This is for the Position Properties */
 
+#posStatic {
+  position: static;
+}
 
-
-
-
-
-
-
-
-/*
-
-{
-    font-family: 'Markazi Text';
-    font-weight: 400;
+.whiteBox2 {
+    background-color: white;
+    border: 2px black solid;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 40px;
   }
-*/
+
+#posFix {
+    background-color: yellow;
+    color: blue;
+    font-weight: bold;
+position: fixed;
+bottom: 0px;
+left: 21px
+}
+
+.whitebox3 {
+    background-color: white;
+    border: 2px black solid;
+    padding: 8px;
+    width: 220px;
+    height: 35px;
+  }
+
+ #relativeTop {
+position: relative;
+top: 25px;
+z-index: 1;
+}
+
+#relativeLeft {
+position: relative;
+left: 40px;
+}
+
+  .whiteBox4 {
+    background-color: white;
+    border: 2px black solid;
+    padding: 10px;
+    width: 300px;
+    height: 36px;
+  }
+
+  #h3_PP {
+    position: absolute;
+    right: 20%;
+    top: 1600px;
+}
