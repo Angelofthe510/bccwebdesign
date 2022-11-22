@@ -1,0 +1,31 @@
+/* This is for the tables on "the ugly 1" page */
+/* I thought this would be a good way to show a very HTML "thing" -- tables */
+
+table {
+    border-collapse: collapse;
+    border: 1px solid magenta;
+  } 
+  
+  th,td {
+    border: 1px solid black;
+  }
+  
+  table.a {
+    table-layout: auto;
+    width: 180px;  
+  }
+  
+  table.b {
+    table-layout: fixed;
+    width: 180px;  
+  }
+  
+  table.c {
+    table-layout: auto;
+    width: 100%;  
+  }
+  
+  table.d {
+    table-layout: fixed;
+    width: 100%;  
+  }

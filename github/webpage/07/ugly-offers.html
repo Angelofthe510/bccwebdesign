@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ugly-styles-01.css">
+</head>
+<body>
+    <div id="offer">
+    <h1>A SPECIAL OFFER CREATED JUST FOR YOU <span class="blankName">&#60;FIRST+NAME&#62;</span>!</h1>
+    <h3>OFFER EXPIRES IN:</h3>
+    <p id="demo" class="offer"></p>
+<script>
+/* Set the date we're counting down to */
+var countDownDate = new Date("Jan 19, 2025 12:00:00").getTime();
+
+/* Update the count down every 1 second */
+var x = setInterval(function() {
+
+/* Get today's date and time */
+  var now = new Date().getTime();
+    
+/* Find the distance between now and the count down date */
+  var distance = countDownDate - now;
+    
+/* Time calculations for days, hours, minutes and seconds */
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+/* Output the result in an element with id="demo" */
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+/* If the count down is over, write some text */
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<p>here</p>
+</div>
+<div id="poop"> <marquee behavior="scroll" direction="left"><span class="blankName">&#60;FIRST+NAME&#62;</span>! YOUR OFFER TODAY!! LIMITED TIME ONLY!!</marquee>
+</div>
+<div id="movBox2">
+    <h3>ACT NOW BEFORE 45 RETURNS!</h3>
+    <p>Dearest <span class="blankName">&#60;COUNTRY&#62;</span>; We value  you as a <b><i>longtile and happy Consumer</i></b>, and now your invited into a special offer we offer only to our fellow interneet users who are happy with their <span class="blankName">&#60;PRODUCT&#62;</span> like you're self and so many others.</p>
+    <h4>CLICK HERE TO CLAIM YOUR OFFER!</h4>
+</div>
+</body>
+</html>
