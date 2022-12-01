@@ -255,6 +255,98 @@ table {
     width: 210px;
     }
 
-    /* Next */
+    /* This would be a second CSS file, but i couldnt make it work!! */
 
-    
+    /* This is for the tables on "the ugly 1" page */
+/* I thought this would be a good way to show a very HTML "thing" -- tables */
+
+table {
+  border-collapse: collapse;
+  border: 1px solid magenta;
+} 
+
+th,td {
+  border: 1px solid black;
+}
+
+table.a {
+  table-layout: auto;
+  width: 180px;  
+}
+
+table.b {
+  table-layout: fixed;
+  width: 180px;  
+}
+
+table.c {
+  table-layout: auto;
+  width: 100%;  
+}
+
+table.d {
+  table-layout: fixed;
+  width: 100%;  
+}
+/* This is for the Offer Page */
+
+#offer{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-align: center;
+font-weight: bold;
+margin-top: 0px;
+background-color: black;
+border-radius: 9px;
+padding: 9px;
+font-size: 150%;
+color: white;
+}
+
+/* Marquee Banner on Offers Page */
+#poop {
+text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000, 0 0;
+ font-style: bold;
+ font-size:2em;
+ font-weight:bold; 
+ color: #ffffff;
+}
+/* Ugly Offers Page */
+
+#offer {
+background-color: beige;
+border: red 9pt dotted;
+padding: 3px 12px 3px 12px;
+margin: 2% 15% 2% 15%;
+border-radius: 6px;
+text-align: center;
+
+}
+#offer, h1 {
+color: red;
+}
+#offer:hover {
+background: yellow;
+border: red 9pt solid;
+padding: 9px 12px 9px 12px;
+margin: 21px 3px 21px 3px;
+border-radius: 6px;
+width: auto;
+height: auto;
+
+}
+
+#movBox2 {
+color: black;
+background-color: lightgrey;
+border: red 9pt ridge;
+margin: 21px 3px 21px 3px;
+padding: 1pt 6pt 12pt 6pt;
+border-radius: 21px;
+box-shadow: #888888 9px;
+min-height: 200px;
+}
+.blankName {
+background-color: red;
+padding: 0 9px 0 9px;
+color: white;
+}
