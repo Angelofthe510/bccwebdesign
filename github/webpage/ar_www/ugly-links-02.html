@@ -3,27 +3,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>this ugly too</title>
+    <title>ugly shopping</title>
     <link rel="stylesheet" href="ugly-styles-01.css">
 </head>
-<body class="body2">
-    <p class="center">this is a page styled with a table layout</p>
+<body>
     <table class="uglyTable1">
         <td>
             <tr>get me <a href="index_lesson_07.html">out of here</a></tr>
             <tr> <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Rotating_earth_maxi.gif" style="width:72px"></tr>
-            <tr>nothing yet</tr>
+            <tr><a href="ugly-links-02.html">what is here</a></tr>
             <tr> <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Rotating_earth_maxi.gif" style="width:72px"></tr>
-            <tr>i'm ready to <a href="ugly-links-02.html">get out of here</a></tr>
+            <tr>i'm ready to <a href="index_lesson_07.html">get out of here</a></tr>
         </td>
         <td>
             <tr><h1>here is an image and it has some style applied</h1></tr>
         </td>
         <td>
-            <tr><h3>image</h3></tr>
+            <tr></tr>
         </td>
     </table>
+    <div id="offer">
+    <h1>A SPECIAL OFFER CREATED JUST FOR YOU <span class="blankName">&#60;FIRST+NAME&#62;</span>!</h1>
+    <h3>OFFER EXPIRES IN:</h3>
+    <p id="demo" class="offerCount"></p>
+<script>
+/* Set the date we're counting down to */
+var countDownDate = new Date("Jan 19, 2025 12:00:00").getTime();
 
+/* Update the count down every 1 second */
+var x = setInterval(function() {
 
+/* Get today's date and time */
+  var now = new Date().getTime();
+    
+/* Find the distance between now and the count down date */
+  var distance = countDownDate - now;
+    
+/* Time calculations for days, hours, minutes and seconds */
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+/* Output the result in an element with id="demo" */
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+/* If the count down is over, write some text */
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<h3>DON'T HESITATE! OFFER MAY END SOON!</h3>
+<h2>CLICK A PRODUCT FOR YOUR OFFER!</h2>
+</div>
+<div id="poop">
+  <marquee behavior="scroll" direction="left"><span class="blankName">&#60;FIRST+NAME&#62;</span>! YOUR OFFER TODAY!! LIMITED TIME ONLY!!</marquee>
+</div>
+<div id="movBox2">
+    <h3 class="center">We Value You <span class="blankName">CHRIS STEWART</span></h3>
+    <p>Dearest <span class="blankName">&#60;COUNTRY&#62;</span>; We value  you as a <b><i>longtile and happy Consumer</i></b>, and now your invited into a special offer we offer only to our fellow interneet users who are happy with their <span class="blankName">&#60;PRODUCT&#62;</span> like you're self and so many others.</p>
+    <div class="div3"><p><img class="clearFixPix" src="https://www.thispersondoesnotexist.com"></p><h3>Clearfix</h3><p>May I say that I have not thoroughly enjoyed serving with humans? I find their illogic and foolish emotions a constant irritant.</p><p>After a time, you may find that having is not so pleasing a thing after all as wanting. It is not logical, but is often true.
+    </p><p>Computers make excellent and efficient servants, but I have no wish to serve under them.</p><p>The needs of the many outweigh the needs of the few.</p><p>Live long and prosper.</p></div>
+    <h4>CLICK HERE TO CLAIM YOUR OFFER!</h4>
+    <div>
+      <img src="https://www.thispersondoesnotexist.com" style="width: 120px;">
+      <p class="quote">At first, I was sceptical about sending the login credentials to my bank, but the agent assured me that as an agent of the American Cyber Security Corporation of America, he would make sure my product arrived swiftly.</p>
+    </div>
+</div>
 </body>
 </html>
