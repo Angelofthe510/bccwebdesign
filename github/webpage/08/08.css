@@ -1,14 +1,18 @@
 /* Lesson 8 - HTML5
     Angel Rittenburg */
 
+/* I added my own ALT colors to the CSS for fun. The original colors are there as reference. 
+
+I also added some 'extras' to the CSS Nav menu around Line 75 */
+
   /* Footer */
 
   footer {
     position: fixed;
     bottom: 12px;
     width: 900px;
-    border: solid 8px #ffcd9b;
-    background-color: #9bcdff;
+    border: solid 8px red; /* #ffcd9b; */
+    background-color: #000000; /* #9bcdff; */
     padding: 10px 20px;
   }
 
@@ -17,24 +21,24 @@
 body {
   width: 960px;
   margin: 0 auto;
-  background-color: #9bcdff;
+  background-color: #000000; /* #9bcdff; */
   font-size: 20px;
   font-family: Times, serif;
-  color: #f76011;
+  color: yellow; /* #f76011; */
 }
 
 header[role="banner"] {
     margin-top: 20px;
     height: 135px;
-    border: solid 10px white;
+    border: solid 9px violet;
   }
   
   h1 {
     font-size: 60px;
     text-align: center;
-    color: #ff4ba0;
+    color: cornflowerblue; /* #ff4ba0; */
     text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
-    margin: 5px 0 0 0;
+    margin: 6px 0 0 0;
   }
 
 /* Navigation Menu */
@@ -62,10 +66,21 @@ header[role="banner"] {
   nav ul li a {
     text-decoration: none;
     padding: 5px 20px;
-    background: #ffcd9b;
+    background: red; /* #ffcd9b; */
     color: #ffffff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
     border: solid 4px white;
+  }
+
+  /* Nav Menu Extas added by Angel */
+
+  nav a:hover {
+    background-color: lightgreen;
+    color: green;
+  }
+  
+  nav a:visited {
+    background-color: yellow;
   }
 
   /* Article Area */
@@ -73,7 +88,7 @@ header[role="banner"] {
   article {
     position: relative;
     top: 35px;
-    background-color: #ffcd9b;
+    background-color: mediumspringgreen; /* #ffcd9b; */
     border: double 10px white;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
     height: 550px;
@@ -81,7 +96,7 @@ header[role="banner"] {
   }
   
   article h2 {
-    color: #ff4ba0;
+    color: cornflowerblue; /* #ff4ba0; */
     font-size: 24px;
     line-height: 14px;
     margin: 20px 0 0 0;
@@ -97,14 +112,14 @@ header[role="banner"] {
   /* Section within Article Area  */
 
   section {
-    background-color: #9bcdff;
+    background-color: #000000; /* #9bcdff; */
     border: double 4px white;
     padding: 0px;
     margin: 10px 10px;
   }
   
   section h3 {
-    color: #ff4ba0;
+    color: cornflowerblue; /* #ff4ba0; */
     font-size: 22px;
     line-height: 14px;
     margin: 10px 0 0 0;
@@ -125,7 +140,7 @@ aside {
     position: relative;
     top: -535px;
     left: 640px;
-    background-color: #ffcd9b;
+    background-color: orange; /* #ffcd9b; */
     border: solid 8px white;
     height: 555px;
     width: 302px;
@@ -133,7 +148,7 @@ aside {
   }
   
   aside h3 {
-    color: #ff4ba0;
+    color: cornflowerblue; /* #ff4ba0; */
     font-size: 24px;
     line-height: 14px;
     margin: 20px 0px 0px 0px;
