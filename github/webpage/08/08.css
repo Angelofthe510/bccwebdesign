@@ -115,8 +115,6 @@ header[role="banner"] {
     padding: 2px 21px;
   }
   
-  /* Section within Article Area  */
-
   article img {
     /*position: absolute;*/
     /*margin-left: 28px;*/
@@ -125,6 +123,13 @@ header[role="banner"] {
     width: 540px;
     height: 128px;
   }
+
+  article a {
+    /* text-decoration: none; remove underline */
+    color: cornflowerblue; /* remove blue */
+  }
+
+  /* Section [this is within the Article] */
 
   section {
     background-color:  #363636;
@@ -157,7 +162,7 @@ aside {
     left: 640px;
     background-color: rgb(180, 200, 253);
     border: solid 8px rgb(87,104,160);
-    height: 555px;
+    height: 556px;
     width: 302px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
   }
