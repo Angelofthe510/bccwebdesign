@@ -100,7 +100,7 @@
     
       article {
         position: relative;
-        top: 35px;
+        top: 45px;
         background-color: #474747;
         border: double 12px cornflowerblue;
         text-shadow: 0 1px 1px black;
@@ -281,14 +281,23 @@
         border-radius: 12px;
       }
     
-       /* Footer */
+        /* Footer */
+        
+        footer {
+          background-color: #474747;
+          position: relative;
+          margin-top: 72px;
+          width: 912px;
+          border: solid 8px cornflowerblue;
+          color: cornflowerblue;
+          padding: 0px 0px 20px 0px;
+        }
     
-       footer {
-        background-color: #474747;
-        position: relative;
-        margin-top: 72px;
-        width: 912px;
-        border: solid 8px cornflowerblue;
-        color: cornflowerblue;
-        padding: 12px 21px;
-      }
+        footer p {
+          margin: 40px 60px 40px 150px;
+        }
+    
+        .footerTxt {
+          font-weight: 800;
+          color: #777;
+        }
