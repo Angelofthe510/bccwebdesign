@@ -1,0 +1,186 @@
+/* added per your suggestion :)  */
+
+body{
+    margin: 0;
+}
+.header {
+    padding: 5px 0 0 0;
+}
+
+/* 960 Custom CSS
+    Angel Rittenburg */
+
+.hr2 {
+    margin: 15px 0px 30px 0px;
+}
+
+/* This is the Top Banner and H1 */
+
+.hello {
+    height: 100px;
+    background-image: linear-gradient(to right, #99ccff, #33cccc);
+    margin: 0px 0px 0px -5px;
+/*    padding: 0px 200px 0px -100px;*/
+    color: #FFF;
+    border-radius: 14px;
+    border: #FFF 2px solid;
+    box-shadow: rgb(100, 100, 100) 0px 0px 9px;
+}
+.hello h1 {
+    margin: 30px 5px 5px 200px;
+}
+
+/* "Hello" Image aka Welcome Image */
+
+.helloImg {
+    margin-top: 5px;
+    border: 2px solid #FFF;
+    border-radius: 15px;
+    box-shadow: rgb(100, 100, 100) 0px 0px 9px;
+
+}
+
+/* Main Nav Menu */
+
+.my960nav ul {
+    font-family: 'Arial', 'Helvetica', 'san-serif';
+    font-weight: 600;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+   /* border-top: 2px solid #000;
+    background-color: #f6f6f6;
+    */
+}
+.my960nav li {
+    float: left;
+}
+.my960nav li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 54px;
+    /* the Numbers here represent the length of the Hyperlink box -
+        00px= T/B 00px= R/L sides */
+}
+.my960nav li a:hover:not(.active) {
+    font-weight: 600;
+    color: #FFF;
+    background-color: #bbdfe7;
+    padding-bottom: 8px;
+    padding-top: 15px;
+    border-radius: 0px 0px 14px 14px;
+    box-shadow: rgb(100, 100, 100) 0px 0px 9px;
+}
+.my960nav li a.active {
+    color: #FFF;
+    background-color: #6e6e6e;
+    padding-top: 15px;
+    border-radius: 0px 0px 14px 14px;
+    margin-bottom: 8px;
+    border-radius: 0px 0px 14px 14px;
+    box-shadow: rgb(100, 100, 100) 0px 0px 9px;
+}
+.my960nav li a:visited {
+    background-color: #8e8e8e;
+    border-radius: 0px 0px 14px 14px;
+    box-shadow: rgb(100, 100, 100) 0px 0px 9px;
+}
+/* re-purposed a tag */
+h6 {
+    text-align: justify;
+    background-color: #FFF;
+    height: 210px;
+    margin: 0 px 5px 0px 20px;
+    padding:20px 30px 30px 30px;
+    border: #FFF 1px solid;
+    border-radius: 12px;
+    box-shadow: rgb(160, 160, 160) 0px 0px 9px;
+    font-weight: 400;
+    font-size: 98%;
+}
+
+h3 {
+    text-align: center;
+    height: 50px;
+    margin: 0 px 5px 0px 20px;
+    padding: 20px 0px 5px 0px;
+    border: #FFF 2px solid;
+    border-radius: 12px;
+    box-shadow: rgb(100, 100, 100) 0px 0px 9px;
+}
+h3 a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 600;
+    text-shadow: rgb(100, 100, 100) 0px 0px 9px;
+}
+
+h3 a:hover {
+    font-size: x-large;
+    border-radius: 12px;
+    text-shadow: rgb(100, 100, 100) 0px 0px 9px;
+}
+
+/* Footer Area */
+
+.myFooter {
+    margin: 0px 0px 10px 0px;
+    background-image: linear-gradient(to right, #99ccff, #33cccc);
+    padding: 20px 40px;
+    border: #FFF 2px solid;
+    border-radius: 14px;
+    box-shadow: rgb(100, 100, 100) 0px 0px 9px;
+
+}
+
+.myFooter p {
+    margin: 10px 20px 5px 200px;
+}
+
+.myFootxt {
+    color: #FFF;
+    font-weight: 500;
+    text-shadow: rgb(100, 100, 100) 0px 0px 9px;
+
+}
+
+.myArticle {
+    background-color: #99ccff;
+    border: #FFF 2px solid;
+    margin: 0px 5px 15px 5px;
+    border-radius: 12px;
+    box-shadow: rgb(111, 111, 111) 0px 0px 9px;
+    padding: 20px;
+    color: #FFF;
+    text-shadow: rgb(100, 100, 100) 0px 0px 9px;    
+}
+
+/*
+    .card {
+        width: 130px;
+        height: 195px;
+        position: relative;
+        display: inline-block;
+        border: 2px solid #667;
+        border-radius: 15px;
+        box-shadow: rgb(100, 100, 100) 0px 0px 9px;
+    }
+
+    this was suposed to be a transition on hover
+
+    .card .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .card:hover .img-top {
+        display: inline;
+    }
+    
+*/
+
