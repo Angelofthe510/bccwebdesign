@@ -1,0 +1,8 @@
+.source {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    background-color: lightgrey;
+    padding: 5px;
+    color: green;/*
+    text-shadow: #667 0px 0px 6px;*/
+}
