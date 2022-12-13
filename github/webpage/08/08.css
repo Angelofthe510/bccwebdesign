@@ -285,13 +285,19 @@
          /* Footer */
       
          footer {
+          position: absolute;
+          margin: 10px 0px 0px 50px;
+          border: solid 7px #d96279;
+          width: 1203px;
+          height: 70px;
+          /*
           background-color: #474747;
           position: relative;
           margin-top: 72px;
           width: 912px;
           border: solid 8px cornflowerblue;
           color: cornflowerblue;
-          padding: 0px 0px 20px 0px;
+          padding: 0px 0px 20px 0px; */
         }
   
         footer p {
