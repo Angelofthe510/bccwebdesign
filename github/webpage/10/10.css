@@ -1,0 +1,86 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    box-sizing:border-box;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    height: 150px;
+    padding: 50px 5px;
+    background-color: #009bc7;
+    }
+
+    section {
+        float: left;
+        font-weight: 300;
+        padding: 30px;
+        width: 50%;
+        font-size: 14px;
+        color: #7d7d7d;
+        box-sizing:border-box;
+
+    }
+
+    @media (max-width:600px) {
+    /* the info here is called a MEDIA FEATURE */
+    /* typically the width is what we add for the size ... */
+
+        section {
+            width: 100%;
+    }
+}
+@media (min-width:400px) and (max-width:600px) {
+    header {
+        background-color: orange;
+    }
+    section {
+        font-size: 24px;
+    }
+    h2 {
+        display: none;
+    }
+    h3 {
+        display: none;
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+@media (min-width:601px) and (max-width:939px) {
+    header {
+        background-color: blue;
+        color: limegreen;
+        font-size: 24px;
+    }
+    h2 {
+        display: none;
+    }
+    h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    h4 {
+        display: none;
+    }
+}
+@media (min-width:940px) {
+    header {
+        background-color: purple;
+        color: yellow;
+        font-size: 24px;
+    }
+    h3 {
+        display: none;
+    }
+    h4 {
+        display: none;
+    }
+}
+

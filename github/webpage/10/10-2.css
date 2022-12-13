@@ -1,0 +1,52 @@
+/* more overlapping */
+
+@media (min-width:300px) {
+    article {
+        color: red;/*
+        border: 1px solid blue;*/
+        border-radius: 5px;
+    }
+}
+
+@media (min-width:600px) {
+    article {
+        color: red;
+        border: 2px solid blue;/*
+        border-radius: 5px;*/
+    }
+}
+
+@media (min-width:900px) {
+    article {/*
+        color: red;*/
+        border: 3px solid blue;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width:300px) and (max-width: 599px) {
+    article {
+        color: red;/*
+        border: 2px solid blue;*/
+        border-radius: 5px;
+    }
+}
+
+
+@media (min-width:600px) and (max-width: 899px) {
+    article {
+        color: red;
+        border: 2px solid blue;/*
+        border-radius: 5px;*/
+    }
+}
+
+@media (min-width:900px) /* and (max-width: 599px) */ {
+    article {/*
+        color: red;*/
+        border: 2px solid blue;
+        border-radius: 5px;
+    }
+}
+
+
