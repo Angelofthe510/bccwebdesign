@@ -1,0 +1,90 @@
+/* my customized CSS for Final Project Page */
+
+body .mainImg2{
+    background-color: #000;
+    padding: 0;
+}
+
+.caption {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: x-small;
+}
+
+.caption2 {
+    margin-top: -10px;
+    margin-bottom: 40px;
+    font-size: x-small;
+    text-align: center;
+}
+.quoteText {
+    background-color: #000;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 25px;
+    font-style: italic;
+    font-weight: 600;
+    color: darkgrey;
+}
+
+.quoteMe {
+    font-style: italic;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.mainImg {
+    /*padding: 20px 10px;*/
+    text-align: center;
+}
+.mainImg img {
+    border: 1px  darkgrey  solid;
+    border-radius: 30px;
+    padding: 0;
+    margin: 0;
+    box-shadow: darkgrey 0px 0px 6px;
+}
+
+.mainImg2 {
+    text-align: center;
+    background-color: #000;
+    border-radius: 25px;
+    color: rgb(150, 150, 150);    
+}
+
+.mainImg2 a {
+    color: limegreen;
+    font-weight: 800;
+}
+
+.mainImg2 a:hover {
+    color: #fff;
+    background-color: limegreen;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 3px;
+    margin: -3px;
+}
+
+.mainImg2 a:visited {
+    color: #fff;
+    background-color: red;
+    border-radius: 3px;
+    padding: 3px;
+    margin: -3px;
+}
+.mainImg2 img {
+    max-width: 870px;
+    max-height: auto;
+    border: 1px #fff  solid;
+    border-radius: 20px;
+    padding: 20;
+    margin: 0;
+    background-color: #000;
+    /*box-shadow: rgb(100, 100, 100) 0px 0px 6px;*/
+}
+
+.mainImg2 h2 {
+    color: #2b87e3;
+    margin: 30px;
+}
