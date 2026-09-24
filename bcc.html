@@ -1,131 +1,457 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../github/webpage/angelfinal2022/wr-css.css">
-    <link rel="stylesheet" href="bcc-ar.css">
-    <!-- Google Fonts -->
-    <!--link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Montez|Playfair+Display"-->
-    <style>
-    </style>
-    <title>Berkeley City College Projects | Angel Rittenburg</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berkeley City College Projects | Angel Rittenburg</title>
+  <meta name="description" content="Berkeley City College multimedia coursework and independent studies by Angel Rittenburg.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ==========================================================
+       Colors & type follow the BCC Brand Guidelines (2025):
+       Dacnis teal #006580 · Gold Finch #daa900 · Osprey red #a50034
+       Serif: Adobe Garamond Pro → EB Garamond (web)
+       Sans:  Myriad Pro → Source Sans 3 (web)
+       ========================================================== */
+    :root {
+      --wall: #fbfaf7;         /* gallery wall */
+      --wall-2: #f3f1ec;       /* alternate room */
+      --ink: #1d1d1b;
+      --muted: #6b6a66;
+      --rule: #e2dfd8;
+      --teal: #006580;         /* Dacnis — primary */
+      --gold: #daa900;         /* Gold Finch */
+      --red: #a50034;          /* Osprey */
+      --frame: #2a2a28;        /* thin black frame */
+      --serif: "Adobe Garamond Pro", "EB Garamond", Garamond, "Times New Roman", serif;
+      --sans: "Myriad Pro", "Source Sans 3", Helvetica, Arial, sans-serif;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+    body { margin: 0; background: var(--wall); color: var(--ink); font: 400 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+    a { color: var(--teal); }
+    img { display: block; max-width: 100%; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+    /* ---------- Header ---------- */
+    .topbar { position: sticky; top: 0; z-index: 10; background: rgba(251,250,247,.94); backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule); }
+    .topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
+    .wordmark { text-decoration: none; color: var(--ink); line-height: 1.1; }
+    .wordmark b { display: block; font: 600 19px/1.1 var(--serif); letter-spacing: .01em; }
+    .wordmark span { font: 600 11px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--teal); }
+    .nav { display: flex; gap: 26px; }
+    .nav a { color: var(--muted); text-decoration: none; font: 600 13px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; }
+    .nav a:hover { color: var(--teal); }
+
+    /* ---------- Entrance / hero ---------- */
+    .entrance { border-bottom: 1px solid var(--rule); }
+    .entrance .wrap { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 48px; padding-top: 88px; padding-bottom: 72px; }
+    .eyebrow { margin: 0; font: 700 12px/1 var(--sans); letter-spacing: .24em; text-transform: uppercase; color: var(--teal); }
+    .eyebrow::after { content: ""; display: block; width: 56px; height: 3px; margin-top: 16px; background: var(--gold); }
+    h1 { margin: 26px 0 0; font: 400 clamp(46px, 7.4vw, 92px)/1.02 var(--serif); letter-spacing: -.01em; }
+    h1 em { font-style: italic; color: var(--teal); }
+    .artist { margin: 26px 0 0; font: 400 22px/1.4 var(--serif); }
+    .artist span { color: var(--muted); font-style: italic; }
+    .visit { margin: 18px 0 0; max-width: 560px; color: var(--muted); font-size: 15px; }
+    .owl-wrap { padding: 30px; } /* clear space around Ollie (≥30% per brand guide) */
+    .owl-wrap img { width: 220px; height: auto; }
+    .index { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--rule); }
+    .index a { font: 600 13px/1.8 var(--sans); letter-spacing: .08em; color: var(--ink); text-decoration: none; border-bottom: 1px solid transparent; }
+    .index a:hover { color: var(--teal); border-bottom-color: var(--gold); }
+
+    /* ---------- Wings & rooms ---------- */
+    .wing { padding: 84px 0 12px; }
+    .wing-title { margin: 0 0 8px; font: 400 clamp(34px, 4.6vw, 52px)/1.1 var(--serif); }
+    .wing-intro { margin: 0 0 40px; color: var(--muted); font-style: italic; font-family: var(--serif); font-size: 20px; }
+    .room { padding: 44px 0 52px; border-top: 1px solid var(--rule); }
+    .room-head { display: grid; grid-template-columns: 110px 1fr auto; align-items: baseline; gap: 20px; margin-bottom: 30px; }
+    .room-no { margin: 0; font: 700 11px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--red); }
+    .room-title h3 { margin: 0; font: 500 clamp(24px, 3vw, 30px)/1.2 var(--serif); }
+    .code { font: 700 14px/1 var(--sans); letter-spacing: .12em; color: var(--teal); margin-right: 8px; vertical-align: .2em; }
+    .room-sub { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+    .room-count { margin: 0; font: 600 12px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+
+    /* ---------- Framed works ---------- */
+    .wall { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 44px 36px; }
+    .work { display: block; color: var(--ink); text-decoration: none; }
+    .frame { background: var(--frame); padding: 5px; box-shadow: 0 1px 1px rgba(0,0,0,.08), 0 10px 22px -8px rgba(0,0,0,.28); transition: transform .25s ease, box-shadow .25s ease; }
+    .mat { background: #fff; padding: 16px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.06), inset 2px 2px 4px rgba(0,0,0,.08); }
+    .mat img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; box-shadow: 0 0 0 1px rgba(0,0,0,.08); }
+    .frame--contain .mat img { object-fit: contain; }
+    a.work:hover .frame, a.work:focus-visible .frame { transform: translateY(-3px); box-shadow: 0 1px 1px rgba(0,0,0,.08), 0 18px 30px -10px rgba(0,0,0,.35); }
+    a.work:focus-visible { outline: 2px solid var(--teal); outline-offset: 6px; }
+    .placard { display: grid; grid-template-columns: auto 1fr; column-gap: 12px; margin-top: 16px; padding-left: 2px; }
+    .placard .no { grid-row: span 2; font: 600 12px/1.9 var(--sans); color: var(--gold); letter-spacing: .06em; }
+    .placard .title { margin: 0; font: 500 18px/1.3 var(--serif); }
+    a.work:hover .title { color: var(--teal); }
+    .medium { margin: 3px 0 0; font: 700 11px/1.4 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+    .is-soon .mat img { filter: grayscale(1); opacity: .45; }
+    .is-soon .title { color: var(--muted); }
+    .is-soon .medium { color: var(--red); }
+    .empty-wall { padding: 30px; border: 1px dashed #cfcbc2; background: var(--wall-2); }
+    .empty-wall .medium { color: var(--red); margin: 0 0 6px; }
+    .empty-wall p:last-child { margin: 0; font: italic 400 19px/1.5 var(--serif); color: var(--muted); }
+
+    /* ---------- Clubs ---------- */
+    .club { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; padding: 30px; background: #fff; border: 1px solid var(--rule); border-left: 4px solid var(--teal); }
+    .club img { width: 120px; }
+    .club h3 { margin: 0; font: 500 26px/1.2 var(--serif); }
+    .club p { margin: 4px 0 0; color: var(--muted); }
+
+    /* ---------- Footer ---------- */
+    footer { margin-top: 96px; background: var(--teal); color: #fff; }
+    footer .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding-top: 40px; padding-bottom: 40px; }
+    footer p { margin: 0; font: 400 22px/1.3 var(--serif); }
+    footer small { display: block; margin-top: 6px; font: 400 13px/1.4 var(--sans); color: rgba(255,255,255,.78); }
+    .cta { display: inline-block; padding: 14px 24px; background: var(--gold); color: var(--ink); text-decoration: none; font: 700 13px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; }
+    .cta:hover { background: #ebbc12; }
+
+    @media (max-width: 760px) {
+      .nav { display: none; }
+      .entrance .wrap { grid-template-columns: 1fr; gap: 8px; padding-top: 56px; padding-bottom: 48px; }
+      .owl-wrap { order: -1; padding: 0 0 8px; }
+      .owl-wrap img { width: 120px; }
+      .room-head { grid-template-columns: 1fr; gap: 8px; }
+      .wall { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 18px; }
+      .mat { padding: 8px; }
+      .placard .title { font-size: 16px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .frame { transition: none; } }
+  </style>
 </head>
 <body>
-    <div style="text-align: center;">
-    <h1 span class="boX">Berkeley City College Projects</span><br/> <span class="angeL">&nbsp;Angel Rittenburg&nbsp;</span></h1>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="wordmark" href="#top"><b>Berkeley City College</b><span>Multimedia Arts · Student Portfolio</span></a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#coursework">Coursework</a>
+        <a href="#independent">Independent</a>
+        <a href="#clubs">Clubs</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <div class="angeL">
-    </div>
-    <div class="boX2">
-      <h2>Links redirect into a New Window<!-- 2023 Spring | 2022 Fall Summer Spring | 2021 Fall --></h2>
-    </div>
-    <div class="angeL">
-    </div>
-    <div class="angeL2">
-      <h3>MMMART 3 - Introduction to MultiMedia<br /><span class="caption">One project per Software Program</span></h3>
-      <p><a href="#" target="_blank"><img src="image_drop/thumb-000.jpg" alt="Photoshop"></a>
-        <a href="#" target="_blank"><img src="image_drop/thumb-000.jpg" alt="Illustrator"></a>
-        <a href="#" target="_blank"><img src="image_drop/thumb-000.jpg" alt="InDesign"></a>
-        <a href="#" target="_blank"><img src="image_drop/thumb-000.jpg" alt="Cinema 4D"></a>
-        </p>
-        <p><a class="caption">Photoshop</a>
-          <a class="caption">Illustrator</a>
-          <a class="caption">InDesign</a>
-          <a class="caption">Cinema 4D</a></p>
-          <p><a href="#" target="_blank"><img src="image_drop/thumb-000.jpg" alt="Cinema 4D"></a></p>
-        <p><a class="caption">Final Group Project</a></p>
-      <hr/>
-      <h3>MMDI 15A - Introduction to 3D Modeling</h3>
-      <p><a href="https://docs.google.com/presentation/d/1h0hNgGyzepCiXZ9iIZQZOsV4nKHNKyoj/edit?usp=sharing&ouid=116327307470406542644&rtpof=true&sd=true" target="_blank"><img src="image_drop/thumb-001.jpg" alt="Train"></a>
-        <a href="https://docs.google.com/presentation/d/1fxdKPEq9g-sknTEkvknZQm8INrpMuNPn/edit?usp=sharing&ouid=116327307470406542644&rtpof=true&sd=true" target="_blank"><img src="image_drop/thumb-002.jpg" alt="Room"></a>
-        <a href="https://youtu.be/fPs11xPxeLc" target="_blank"><img src="https://tinyurl.com/yckxbbet" alt="NPO Logo"></a>
-        <a href="https://youtu.be/7XZ28Q-x8lI" target="_blank"><img src="https://tinyurl.com/2p8ur23v" alt="Final: Tesla"></a></p>
-      <p><a href="#" class="caption">Train</a>
-        <a href="#" class="caption">Room Interior</a>
-        <a href="#" class="caption">Non Profit Promo</a>
-        <a href="#" class="caption">Commercial Logo</a></p>
-        <hr/>
-      <h3>MMDI 15B - Advanced 3D Modeling</h3>
-      <p><a href="https://youtu.be/fazo9HaDUvk" target="_blank"><img src="image_drop/thumb-009.jpg" alt="SOCHI"></a>
-        <a href="https://youtu.be/B9sS5SPWIA8" target="_blank"><img src="image_drop/thumb-010.jpg" alt="PBS Show Intro"></a></p>
-        <p><a class="caption">Sports Logo</a>
-          <a class="caption">NPR Intro</a>
-          <hr/>
-      <h3>MMDI 4A - Intro to Photoshop</h3>
-      <p><a href="image_drop/01_Rittenburg_selphie_01.jpg" target="_blank"><img src="image_drop/thumb-019.jpg" alt="1 Selfie"></a>
-        <a href="image_drop//01.3_Rittenburg_retouch.jpg" target="_blank"><img src="image_drop/thumb-027.jpg" alt="1 Retouch"></a>
-        <a href="image_drop/02.1_Rittenburg_Comp_Scaling.jpg" target="_blank"><img src="image_drop/thumb-020.jpg" alt="2 Scaling"></a>
-        <a href="image_drop/03_Rittenburg_Collage_house.jpg" target="Hansel & Gretel or Candy House"><img src="image_drop/thumb-021.jpg" alt="3 Candy House"></a>
-        <a href="image_drop/04_Rittenburg_Collage.jpg" target="_blank"><img src="image_drop/thumb-022.jpg" alt="4 Photo Collage"></a>
-        <a href="https://youtu.be/vfhx_NS3fqo"" target="_blank"><img src="image_drop/thumb-023.jpg" alt="5 Animate a Photo"></a>
-        <a href="image_drop/06_Rittenburg_Sugar_Poster_01.jpg" alt=""><img src="image_drop/thumb-033.jpg" alt="6 Anti-Sugar Poster"></a>
-        <a href="image_drop/07_Rittenburg_Rotoscope.mp4" target="_blank"><img src="image_drop/thumb-024.jpg" alt="7 Rotoscope"></a>
-        <a href="image_drop/11.1_Rittenburg_Levels_Color.jpg" target="_blank"><img src="image_drop/thumb-025.jpg" alt="11 Levels to Adjust Color"></a>
-        <a href="image_drop/11.2_Rittenburg_Photo_Fix.png" target="_blank"><img src="image_drop/thumb-028.jpg" alt="11 Photo Fix"></a>
-        <a href="https://angelofthe510.github.io/bccwebdesign/github/webpage/angelfinal2022/index.html" target="_blank"><img src="image_drop/thumb-017.jpg" alt="12 Final"></a></p>
-      <hr />
-      <h3>MMMART 5A - Introduction to Motion Graphics</h3>
-      <p><a href="https://youtu.be/TFvg7usDI5Y" target="_blank"><img src="image_drop/thumb-007.jpg" alt="Genesis Promo"></a>
-        <a href="
-        "></a>
-        <a href="#" target="_blank"><img src="image_drop/thumb-060.jpg" alt="Final: Good Girls promo"></a></p>
-        <hr/>
-      <h3>MMVI 9A - Introduction to Video Production</h3>
-      <p><a href="https://youtu.be/MYSd92gCe5Y" target="_blank"><img src="image_drop/thumb-011.jpg" alt="Winning and Losing"></a>
-        <a href="https://youtu.be/RYPHdlo79iQ" target="_blank"><img src="image_drop/thumb-005.jpg" alt="Final: Drinks"></a></p>
-        <p><a class="caption">Winning and Loosing</a>
-        <a class="caption">Final: Drinks</a></p>
-      <hr/>
-      <h3>MMVI 20A - Introduction to Video Editing</h3>
-      <p>
-        <a href="../angelfinal2022/index.html" target="_blank"><img src="image_drop/thumb-016.jpg" alt="Donuts"></a>
-        <a href="https://youtu.be/GSxre1SSnUM" target="_blank"><img src="image_drop/thumb-013.jpg" alt="PSA"></a>
-        <a href="../angelfinal2022/index.html" target="_blank"><img src="image_drop/thumb-017.jpg" alt="Final: White Rabbit Revisited"></a></p>
-        <p><a class="caption">Donute Reams
-          <a class="caption">Public Service Announcement</a>
-          <a class="caption">Final: Music Band Promo</a>
-        </p>
-        <hr/>
-        <h3>MMDI 33 - Typography</h3>
-        <p>
-          <a href="image_drop/33-Lettermark-2.png" target="_blank"><img src="image_drop/33-Lettermark-2.png" alt=""></a>
-          <a href="image_drop/33_Social_Justice_2.png" target="_blank"><img src="image_drop/thumb-029.jpg" alt=""></a>
-          <a href="image_drop/33_Font_A-M_2.jpg" target="_blank"><img src="image_drop/thumb-030.jpg" alt=""></a>
-          <a href="image_drop/33_Font_N-Z_2.jpg" target="_blank"><img src="image_drop/thumb-031.jpg" alt=""></a>
-        </p>
-        <hr />
-      <h3>MMDI 515A - Intro to 3D Modeling <span class="angeL">&nbsp;Free Non-credit Class&nbsp;</span></h3>
-      <p><a href="https://docs.google.com/presentation/d/1us8Vv79ppXKYR2NhT92e9jAT3JtlIju7/edit?usp=sharing&ouid=116327307470406542644&rtpof=true&sd=true" target="blank"><img src="image_drop/thumb-008.jpg" alt="Spaceship"></a>
-        <a href=""></a></p>
-        <p><a class="caption">Spaceship</a></p>
-        <hr />
-        <h3 style="text-align: center">Clubs</h3>
-        <p><img src="image_drop/wfm_tm.jpg" alt=""> <a href="https://www.whyfactsmatter.com" target="_blank">Why Facts Matter</a>: Socially Relevant Media</p>
+  </header>
+
+  <section class="entrance" id="top">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Berkeley City College · Selected Works</p>
+        <h1>Student Projects in <em>Multimedia Arts</em></h1>
+        <p class="artist">Angel Rittenburg <span>— Producer, Content Creator &amp; Virtual Production student</span></p>
+        <p class="visit">Every work opens in a new window. Videos play on YouTube, and slide decks open in Google Slides.</p>
+        <nav class="index" aria-label="Galleries">
+        <a href="#mmart3">MMART 3</a>
+        <a href="#mmdi15a">MMDI 15A</a>
+        <a href="#mmdi15b">MMDI 15B</a>
+        <a href="#mmdi4a">MMDI 4A</a>
+        <a href="#mmart5a">MMART 5A</a>
+        <a href="#mmvi9a">MMVI 9A</a>
+        <a href="#mmvi20a">MMVI 20A</a>
+        <a href="#mmdi33">MMDI 33</a>
+        <a href="#mmdi515a">MMDI 515A</a>
+          <a href="#independent">Independent Studies</a>
+        </nav>
+      </div>
+      <!-- Ollie the Owl: upload the official BCC owl as image_drop/bcc-owl.png -->
+      <div class="owl-wrap">
+        <img src="image_drop/bcc-owl.png" alt="Ollie the Owl, Berkeley City College mascot" onerror="this.parentNode.style.display='none'">
       </div>
     </div>
+  </section>
 
-    <hr class="angeL">
-    <div class="angeL2">
-      <h1 style="text-align: center">Independent Studies</h1>
-      <h3 style="text-align: center">Maxon C4D Projects</h3>      
-      <table style="text-align: center">
-        <tr>
-          <td><a href="https://youtu.be/3uT_xDz5EUc" target="_blank"><img src="image_drop/thumb-018.jpg" alt="GUI"></a></td>
-          <td><a href="https://youtu.be/ImjP-ANzmWw" target="_blank"><img src="image_drop/thumb-006.jpg" alt="TOS Communicator"></a></td>
-          <td><a href="https://youtu.be/lpc-E8oDR24" target="_blank"><img src="image_drop/thumb-003.jpg" alt="Fly Out"></a></td>
-          <td><a href="https://youtu.be/19yqhDIz2Oo" target="_blank"><img src="image_drop/thumb-004.jpg" alt="Soft Kitty"></a></td>
-        </tr>
-        <tr>
-          <td class="caption">GUI</td>
-          <td class="caption">Communicator</td>
-          <td class="caption">Leaving Spacedock</td>
-          <td class="caption">Bouncing Ball</td>
-        </tr>
-      </table>
+  <main class="wrap">
+
+    <section class="wing" id="coursework">
+      <h2 class="wing-title">The Coursework Collection</h2>
+      <p class="wing-intro">Projects from Berkeley City College multimedia courses</p>
+
+    <section class="room" id="mmart3">
+      <header class="room-head">
+        <p class="room-no">Gallery 01</p>
+        <div class="room-title">
+          <h3><span class="code">MMART 3</span> Introduction to Multimedia</h3>
+          <p class="room-sub">One project per software program</p>
+        </div>
+        <p class="room-count">In preparation</p>
+      </header>
+      <div class="empty-wall">
+        <p class="medium">Coming soon</p>
+        <p>Photoshop · Illustrator · InDesign · Cinema 4D · Final Group Project</p>
+      </div>
+    </section>
+
+    <section class="room" id="mmdi15a">
+      <header class="room-head">
+        <p class="room-no">Gallery 02</p>
+        <div class="room-title">
+          <h3><span class="code">MMDI 15A</span> Introduction to 3D Modeling</h3>
+          <p class="room-sub">Maxon Cinema 4D</p>
+        </div>
+        <p class="room-count">4 works</p>
+      </header>
+      <div class="wall">
+        <a class="work" href="train.html" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-001.jpg" alt="My Train" loading="lazy"></div></div>
+          <div class="placard"><span class="no">01</span><p class="title">My Train</p><p class="medium">Gallery</p></div>
+        </a>
+        <a class="work" href="room.html" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-002.jpg" alt="My Very Expensive Room" loading="lazy"></div></div>
+          <div class="placard"><span class="no">02</span><p class="title">My Very Expensive Room</p><p class="medium">Gallery</p></div>
+        </a>
+        <a class="work" href="https://youtu.be/fPs11xPxeLc" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="https://img.youtube.com/vi/fPs11xPxeLc/hqdefault.jpg" alt="Nonprofit (NPO) Logo" loading="lazy"></div></div>
+          <div class="placard"><span class="no">03</span><p class="title">Nonprofit (NPO) Logo</p><p class="medium">Video</p></div>
+        </a>
+        <a class="work" href="https://youtu.be/7XZ28Q-x8lI" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="https://img.youtube.com/vi/7XZ28Q-x8lI/hqdefault.jpg" alt="Final: Tesla Company Logo" loading="lazy"></div></div>
+          <div class="placard"><span class="no">04</span><p class="title">Final: Tesla Company Logo</p><p class="medium">Video</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="room" id="mmdi15b">
+      <header class="room-head">
+        <p class="room-no">Gallery 03</p>
+        <div class="room-title">
+          <h3><span class="code">MMDI 15B</span> Advanced 3D Modeling</h3>
+          <p class="room-sub">Maxon Cinema 4D</p>
+        </div>
+        <p class="room-count">2 works</p>
+      </header>
+      <div class="wall">
+        <a class="work" href="https://youtu.be/fazo9HaDUvk" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-009.jpg" alt="Sports Logo: Sochi" loading="lazy"></div></div>
+          <div class="placard"><span class="no">01</span><p class="title">Sports Logo: Sochi</p><p class="medium">Video</p></div>
+        </a>
+        <a class="work" href="https://youtu.be/B9sS5SPWIA8" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-010.jpg" alt="NPR Intro" loading="lazy"></div></div>
+          <div class="placard"><span class="no">02</span><p class="title">NPR Intro</p><p class="medium">Video</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="room" id="mmdi4a">
+      <header class="room-head">
+        <p class="room-no">Gallery 04</p>
+        <div class="room-title">
+          <h3><span class="code">MMDI 4A</span> Introduction to Photoshop</h3>
+        </div>
+        <p class="room-count">11 works</p>
+      </header>
+      <div class="wall">
+        <a class="work" href="image_drop/01_Rittenburg_selphie_01.jpg" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-019.jpg" alt="Selfie" loading="lazy"></div></div>
+          <div class="placard"><span class="no">01</span><p class="title">Selfie</p><p class="medium">Still image</p></div>
+        </a>
+        <a class="work" href="image_drop/01.3_Rittenburg_retouch.jpg" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-027.jpg" alt="Retouch" loading="lazy"></div></div>
+          <div class="placard"><span class="no">02</span><p class="title">Retouch</p><p class="medium">Still image</p></div>
+        </a>
+        <a class="work" href="image_drop/02.1_Rittenburg_Comp_Scaling.jpg" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-020.jpg" alt="Compositing &amp; Scaling" loading="lazy"></div></div>
+          <div class="placard"><span class="no">03</span><p class="title">Compositing &amp; Scaling</p><p class="medium">Still image</p></div>
+        </a>
+        <a class="work" href="image_drop/03_Rittenburg_Collage_house.jpg" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-021.jpg" alt="Candy House Collage" loading="lazy"></div></div>
+          <div class="placard"><span class="no">04</span><p class="title">Candy House Collage</p><p class="medium">Still image</p></div>
+        </a>
+        <a class="work" href="image_drop/04_Rittenburg_Collage.jpg" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-022.jpg" alt="Photo Collage" loading="lazy"></div></div>
+          <div class="placard"><span class="no">05</span><p class="title">Photo Collage</p><p class="medium">Still image</p></div>
+        </a>
+        <a class="work" href="https://youtu.be/vfhx_NS3fqo" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-023.jpg" alt="Animate a Photo" loading="lazy"></div></div>
+          <div class="placard"><span class="no">06</span><p class="title">Animate a Photo</p><p class="medium">Video</p></div>
+        </a>
+        <a class="work" href="image_drop/06_Rittenburg_Sugar_Poster_01.jpg" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-033.jpg" alt="Anti-Sugar Poster" loading="lazy"></div></div>
+          <div class="placard"><span class="no">07</span><p class="title">Anti-Sugar Poster</p><p class="medium">Still image</p></div>
+        </a>
+        <a class="work" href="image_drop/07_Rittenburg_Rotoscope.mp4" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-024.jpg" alt="Rotoscope" loading="lazy"></div></div>
+          <div class="placard"><span class="no">08</span><p class="title">Rotoscope</p><p class="medium">Video</p></div>
+        </a>
+        <a class="work" href="image_drop/11.1_Rittenburg_Levels_Color.jpg" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-025.jpg" alt="Levels to Adjust Color" loading="lazy"></div></div>
+          <div class="placard"><span class="no">09</span><p class="title">Levels to Adjust Color</p><p class="medium">Still image</p></div>
+        </a>
+        <a class="work" href="image_drop/11.2_Rittenburg_Photo_Fix.png" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-028.jpg" alt="Photo Fix" loading="lazy"></div></div>
+          <div class="placard"><span class="no">10</span><p class="title">Photo Fix</p><p class="medium">Still image</p></div>
+        </a>
+        <a class="work" href="../angelfinal2022/index.html" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-017.jpg" alt="Final Project" loading="lazy"></div></div>
+          <div class="placard"><span class="no">11</span><p class="title">Final Project</p><p class="medium">Web page</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="room" id="mmart5a">
+      <header class="room-head">
+        <p class="room-no">Gallery 05</p>
+        <div class="room-title">
+          <h3><span class="code">MMART 5A</span> Introduction to Motion Graphics</h3>
+        </div>
+        <p class="room-count">2 works</p>
+      </header>
+      <div class="wall">
+        <a class="work" href="https://youtu.be/TFvg7usDI5Y" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-007.jpg" alt="Genesis Promo" loading="lazy"></div></div>
+          <div class="placard"><span class="no">01</span><p class="title">Genesis Promo</p><p class="medium">Video</p></div>
+        </a>
+        <div class="work is-soon">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-060.jpg" alt="Final: Good Girls Promo" loading="lazy"></div></div>
+          <div class="placard"><span class="no">02</span><p class="title">Final: Good Girls Promo</p><p class="medium">Coming soon</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="room" id="mmvi9a">
+      <header class="room-head">
+        <p class="room-no">Gallery 06</p>
+        <div class="room-title">
+          <h3><span class="code">MMVI 9A</span> Introduction to Video Production</h3>
+        </div>
+        <p class="room-count">2 works</p>
+      </header>
+      <div class="wall">
+        <a class="work" href="https://youtu.be/MYSd92gCe5Y" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-011.jpg" alt="Winning and Losing" loading="lazy"></div></div>
+          <div class="placard"><span class="no">01</span><p class="title">Winning and Losing</p><p class="medium">Video</p></div>
+        </a>
+        <a class="work" href="https://youtu.be/RYPHdlo79iQ" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-005.jpg" alt="Final: Drinks" loading="lazy"></div></div>
+          <div class="placard"><span class="no">02</span><p class="title">Final: Drinks</p><p class="medium">Video</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="room" id="mmvi20a">
+      <header class="room-head">
+        <p class="room-no">Gallery 07</p>
+        <div class="room-title">
+          <h3><span class="code">MMVI 20A</span> Introduction to Video Editing</h3>
+        </div>
+        <p class="room-count">3 works</p>
+      </header>
+      <div class="wall">
+        <a class="work" href="../angelfinal2022/index.html" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-016.jpg" alt="Donut Dreams" loading="lazy"></div></div>
+          <div class="placard"><span class="no">01</span><p class="title">Donut Dreams</p><p class="medium">Web page</p></div>
+        </a>
+        <a class="work" href="https://youtu.be/GSxre1SSnUM" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-013.jpg" alt="Public Service Announcement" loading="lazy"></div></div>
+          <div class="placard"><span class="no">02</span><p class="title">Public Service Announcement</p><p class="medium">Video</p></div>
+        </a>
+        <a class="work" href="../angelfinal2022/index.html" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-017.jpg" alt="Final: White Rabbit Revisited (Band Promo)" loading="lazy"></div></div>
+          <div class="placard"><span class="no">03</span><p class="title">Final: White Rabbit Revisited (Band Promo)</p><p class="medium">Web page</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="room" id="mmdi33">
+      <header class="room-head">
+        <p class="room-no">Gallery 08</p>
+        <div class="room-title">
+          <h3><span class="code">MMDI 33</span> Typography</h3>
+        </div>
+        <p class="room-count">4 works</p>
+      </header>
+      <div class="wall">
+        <a class="work" href="image_drop/33-Lettermark-2.png" target="_blank" rel="noopener">
+          <div class="frame frame--contain"><div class="mat"><img src="image_drop/33-Lettermark-2.png" alt="Lettermark" loading="lazy"></div></div>
+          <div class="placard"><span class="no">01</span><p class="title">Lettermark</p><p class="medium">Still image</p></div>
+        </a>
+        <a class="work" href="image_drop/33_Social_Justice_2.png" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-029.jpg" alt="Social Justice Type Poster" loading="lazy"></div></div>
+          <div class="placard"><span class="no">02</span><p class="title">Social Justice Type Poster</p><p class="medium">Still image</p></div>
+        </a>
+        <a class="work" href="image_drop/33_Font_A-M_2.jpg" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-030.jpg" alt="Custom Font A–M" loading="lazy"></div></div>
+          <div class="placard"><span class="no">03</span><p class="title">Custom Font A–M</p><p class="medium">Still image</p></div>
+        </a>
+        <a class="work" href="image_drop/33_Font_N-Z_2.jpg" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-031.jpg" alt="Custom Font N–Z" loading="lazy"></div></div>
+          <div class="placard"><span class="no">04</span><p class="title">Custom Font N–Z</p><p class="medium">Still image</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="room" id="mmdi515a">
+      <header class="room-head">
+        <p class="room-no">Gallery 09</p>
+        <div class="room-title">
+          <h3><span class="code">MMDI 515A</span> Introduction to 3D Modeling</h3>
+          <p class="room-sub">Free non-credit class · continued in <a href="#mmdi15a">MMDI 15A &amp; 15B</a></p>
+        </div>
+        <p class="room-count">1 work</p>
+      </header>
+      <div class="wall">
+        <a class="work" href="spaceship.html" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-008.jpg" alt="My Spaceship" loading="lazy"></div></div>
+          <div class="placard"><span class="no">01</span><p class="title">My Spaceship</p><p class="medium">Gallery</p></div>
+        </a>
+      </div>
+    </section>
+    </section>
+
+    <section class="wing" id="independent">
+      <h2 class="wing-title">Independent Studies</h2>
+      <p class="wing-intro">Self-directed work in Maxon Cinema 4D</p>
+      <section class="room">
+        <header class="room-head">
+          <p class="room-no">Special Exhibit</p>
+          <div class="room-title"><h3><span class="code">C4D</span> Maxon Cinema 4D Projects</h3></div>
+          <p class="room-count">4 works</p>
+        </header>
+        <div class="wall">
+        <a class="work" href="https://youtu.be/3uT_xDz5EUc" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-018.jpg" alt="GUI" loading="lazy"></div></div>
+          <div class="placard"><span class="no">01</span><p class="title">GUI</p><p class="medium">Video</p></div>
+        </a>
+        <a class="work" href="https://youtu.be/ImjP-ANzmWw" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-006.jpg" alt="TOS Communicator" loading="lazy"></div></div>
+          <div class="placard"><span class="no">02</span><p class="title">TOS Communicator</p><p class="medium">Video</p></div>
+        </a>
+        <a class="work" href="https://youtu.be/lpc-E8oDR24" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-003.jpg" alt="Leaving Spacedock" loading="lazy"></div></div>
+          <div class="placard"><span class="no">03</span><p class="title">Leaving Spacedock</p><p class="medium">Video</p></div>
+        </a>
+        <a class="work" href="https://youtu.be/19yqhDIz2Oo" target="_blank" rel="noopener">
+          <div class="frame"><div class="mat"><img src="image_drop/thumb-004.jpg" alt="Soft Kitty: Bouncing Ball" loading="lazy"></div></div>
+          <div class="placard"><span class="no">04</span><p class="title">Soft Kitty: Bouncing Ball</p><p class="medium">Video</p></div>
+        </a>
+        </div>
+      </section>
+    </section>
+
+    <section class="wing" id="clubs">
+      <h2 class="wing-title">Clubs</h2>
+      <div class="club">
+        <img src="image_drop/wfm_tm.jpg" alt="Why Facts Matter logo">
+        <div>
+          <h3><a href="https://www.whyfactsmatter.com" target="_blank" rel="noopener">Why Facts Matter</a></h3>
+          <p>Socially relevant media</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div>
+        <p>Angel Rittenburg</p>
+        <small>Berkeley City College student · The Knight Castle Production</small>
+      </div>
+      <a class="cta" href="mailto:angelrittenburg@gmail.com">Contact Angel</a>
     </div>
-    <div class="footer">
-      <p><a href="mailto:angelrittenburg@gmail.com">- - : | contact angel | : - - </a></p>
-    </div>
+  </footer>
+
 </body>
 </html>
